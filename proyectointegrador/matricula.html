@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrícula</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar-fija">
+    <h2 class="logo"><a href="index.html" style="color:inherit;text-decoration:none">INSTITUCIÓN EDUCATIVA</a></h2>
+    <nav class="menu">
+      <button class="btn-menu">MENÚ ☰</button>
+      <ul class="submenu">
+        <li><a href="aspirante.html">ASPIRANTE</a></li>
+        <li><a href="estudiante.html">ESTUDIANTE</a></li>
+        <li><a href="matricula.html">MATRÍCULA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina">
+
+    <section class="pagina-hero">
+      <h1>PROCESO DE MATRÍCULA</h1>
+      <p>Formaliza la vinculación del estudiante para el año lectivo 2025–2026.</p>
+    </section>
+
+    <section class="seccion">
+      <h2>Documentos requeridos</h2>
+      <ul class="cards">
+        <li class="card">
+          <span class="card-icono"></span>
+          <h3>Documentos de identidad</h3>
+        
+        </li>
+       
+        <li class="card">
+          <span class="card-icono"></span>
+          <h3>Boletín anterior</h3>
+        
+        </li>
+       
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>Formulario de matrícula</h2>
+      <article class="form-contenedor">
+        <fieldset class="form-grid">
+
+          <p class="campo ancho-total">
+            <label> Datos del estudiante </label>
+          </p>
+          <p class="campo">
+            <label for="m-nombre">Nombres</label>
+            <input type="text" id="m-nombre" placeholder="Nombres completos">
+          </p>
+          <p class="campo">
+            <label for="m-apellidos">Apellidos</label>
+            <input type="text" id="m-apellidos" placeholder="Apellidos completos">
+          </p>
+          <p class="campo">
+            <label for="m-doc">Tipo de documento</label>
+            <select id="m-doc">
+              <option>Seleccionar </option>
+              <option>Registro civil</option>
+              <option>Tarjeta de identidad</option>
+              <option>Cédula de ciudadanía</option>
+            </select>
+          </p>
+          <p class="campo">
+            <label for="m-ndoc">Número de documento</label>
+            <input type="text" id="m-ndoc" placeholder="Número">
+          </p>
+          <p class="campo">
+            <label for="m-fecha">Fecha de nacimiento</label>
+            <input type="date" id="m-fecha">
+          </p>
+          
+          <p class="campo ancho-total">
+            <label for="m-dir">Dirección de residencia</label>
+            <input type="text" id="m-dir" placeholder="Calle / Carrera / Barrio / Ciudad">
+          </p>
+
+         
+          
+          <p class="campo">
+            <label for="m-tel">Teléfono principal</label>
+            <input type="tel" id="m-tel" placeholder="32345678">
+          </p>
+          <p class="campo">
+            <label for="m-tel2">Teléfono alternativo</label>
+            <input type="tel" id="m-tel2" placeholder="Opcional">
+          </p>
+          <p class="campo ancho-total">
+            <label for="m-email">Correo electrónico</label>
+            <input type="email" id="m-email" placeholder="correo@ejemplo.com">
+          </p>
+
+         
+         
+
+        </fieldset>
+        <button class="btn-form" onclick="enviarMatricula()">CONFIRMAR MATRÍCULA</button>
+      </article>
+    </section>
+
+    <section class="seccion">
+      
+      <ul class="cards">
+       
+        <li class="card">
+          <span class="card-icono"></span>
+          <h3>Más información</h3>
+          <p>Secretaría 12345678
+
+          </p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>© 2025 Institución Educativa </footer>
+
+ 
+</body>
+</html>
